@@ -8,7 +8,7 @@
         display: inline-block;
         border-radius: 10rem;
         transition: all .2s;
-        backface-visibility: hidden;
+        // backface-visibility: hidden;
         position: relative;    
         font-size: $default-font-size;
 
@@ -24,9 +24,11 @@
             opacity: 0;
         }
     }
-    &:active {
+    &:active,
+    &:focus {
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+        outline: none;
     }
     &--white {
         background-color: $color-white;

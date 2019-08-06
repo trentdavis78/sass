@@ -15,6 +15,24 @@
 </head>
 
 <body>
+    <div class="navigation">
+        <input type="checkbox" id="navToggle" class="navigation__checkbox">
+        <label for="navToggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#!" class="navigation__link">About Natours</a></li>
+                <li class="navigation__item"><a href="#!" class="navigation__link">Your Benefits</a></li>
+                <li class="navigation__item"><a href="#!" class="navigation__link">Popular Tours</a></li>
+                <li class="navigation__item"><a href="#!" class="navigation__link">Stories</a></li>
+                <li class="navigation__item"><a href="#!" class="navigation__link">Book Now</a></li>
+            </ul>
+        </nav>
+    </div>
     <header class="header">
         <div class="header__logo-box">
             <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -106,7 +124,7 @@
             </div>
         </section>
 
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Most popular tours
@@ -138,7 +156,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$297</p>
                                 </div>
-                                <a href="#!" class="btn btn--white card__btn">Book now!</a>
+                                <a href="#popup" class="btn btn--white card__btn">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -168,7 +186,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$497</p>
                                 </div>
-                                <a href="#!" class="btn btn--white card__btn">Book now!</a>
+                                <a href="#popup" class="btn btn--white card__btn">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -198,7 +216,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$897</p>
                                 </div>
-                                <a href="#!" class="btn btn--white card__btn">Book now!</a>
+                                <a href="#popup" class="btn btn--white card__btn">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -260,20 +278,22 @@
                 <div class="book">
                     <div class="book__form">
                         <form action="#!" class="form">
-                                <div class="u-center-text u-margin-bottom-big">
-                                        <h2 class="heading-secondary">
-                                            Start Booking Now
-                                        </h2>
-                                    </div>
+                            <div class="u-center-text u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    Start Booking Now
+                                </h2>
+                            </div>
                             <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Full Name" id="name" required autocomplete="off" />
+                                <input type="text" class="form__input" placeholder="Full Name" id="name" required
+                                    autocomplete="off" />
                                 <label for="name" class="form__label">Full Name</label>
                             </div>
                             <div class="form__group">
-                                <input type="email" class="form__input" placeholder="Email Address" id="email" required autocomplete="off" />
+                                <input type="email" class="form__input" placeholder="Email Address" id="email" required
+                                    autocomplete="off" />
                                 <label for="email" class="form__label">Email Address</label>
                             </div>
-                            <div class="form__group">
+                            <div class="form__group u-margin-bottom-medium">
                                 <div class="form__radio-group">
                                     <input type="radio" class="form__radio-input" id="small" name="group">
                                     <label for="small" class="form__radio-label">
@@ -297,8 +317,63 @@
                 </div>
             </div>
         </section>
-
     </main>
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/logo-green-2x.png" alt="Full Logo" class="footer__logo" />
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#!" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="#!" class="footer__link">Contact Us</a></li>
+                        <li class="footer__item"><a href="#!" class="footer__link">Careers</a></li>
+                        <li class="footer__item"><a href="#!" class="footer__link">Privacy</a></li>
+                        <li class="footer__item"><a href="#!" class="footer__link">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Built by <a href="#!" class="footer__link">Trent Davis</a>
+                    <br />
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, dolorum mollitia non eligendi
+                    deserunt perspiciatis alias exercitationem iste accusantium sequi? Voluptates praesentium a, nobis
+                    impedit ab aspernatur at labore illo?
+                    <br />
+                    Copyright &copy; 2019
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="Tour Photo 1" class="popup__img">
+                <img src="img/nat-9.jpg" alt="Tour Photo 1" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before
+                    booking</h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita quae inventore, deleniti
+                    consequatur molestias error? Ea qui eveniet, temporibus reprehenderit dolorum officia, rem commodi
+                    distinctio laboriosam nam, placeat consequatur illo. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Expedita quae inventore, deleniti
+                    consequatur molestias error? Ea qui eveniet, temporibus reprehenderit dolorum officia, rem commodi
+                    distinctio laboriosam nam, placeat consequatur illo. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Expedita quae inventore, deleniti
+                    consequatur molestias error? Ea qui eveniet, temporibus reprehenderit dolorum officia, rem commodi
+                    distinctio laboriosam nam, placeat consequatur illo.
+                </p>
+                <a href="#!" class="btn btn--green">Book Now</a>
+            </div>
+        </div>
+    </div>
     <!-- <section class="grid-test">
         <div class="row">
             <div class="col-1-of-2">
